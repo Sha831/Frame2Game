@@ -8,6 +8,8 @@ import shutil
 from src.backend.file_manager import FileManager
 from src.backend_helpers.helper_thread import WorkerThreadDownload
 from src.frontend.main_window import MainWindow
+from src.backend_helpers.path_helper import resource_path
+
 
 class DownloadDialog(QDialog):
 
@@ -35,7 +37,8 @@ class DownloadDialog(QDialog):
         title_layout_inner.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         #app Icon
-        pixmap = QPixmap('_internal/app.ico')
+        icon_path = resource_path(r'app.ico')
+        pixmap = QPixmap(icon_path)
         icon_label = QLabel()
         icon_label.setPixmap(pixmap)
         icon_label.setFixedSize(30, 30)
@@ -192,7 +195,8 @@ def main():
     app_name_and_version = 'Frame2Game v1.0.0'
     app = QApplication(sys.argv)
     app.setApplicationName(app_name_and_version)
-    app.setWindowIcon(QIcon(r'app.ico'))
+    icon_path = resource_path(r'app.ico')
+    app.setWindowIcon(QIcon(icon_path))
 
     if models_ready:
         #launch main app
@@ -202,7 +206,7 @@ def main():
     else:
         #show download dialog
         
-        MODEL_ZIP_URL = ""#to be updated
+        MODEL_ZIP_URL = "https://github.com/Sha831/Frame2Game/releases/download/Models-Frame2Game_v1.0.0/models.zip"#to be updated
 
         dialog = DownloadDialog(MODEL_ZIP_URL, file_manager)
         if dialog.exec() == QDialog.DialogCode.Accepted:

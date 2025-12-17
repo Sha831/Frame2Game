@@ -11,9 +11,12 @@ from src.frontend_helper import image_converters as img_conv
 from src.backend.image_processing_yolo import ImageProcess
 from src.frontend.image_assert import AssertViewer
 from src.backend_helpers.helper_thread import WorkerThreadYolo
+from src.backend_helpers.path_helper import resource_path
 
-with open(r"src\frontend\config.json", "r") as f:
+path = resource_path(r"src\frontend\config.json")
+with open(path, "r") as f:
     theme = json.load(f)
+
 
 BoundingBox = namedtuple('BoundingBox',['x1','y1','x2','y2'])
 

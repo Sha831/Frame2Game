@@ -4,13 +4,12 @@ import json
 import copy
 
 
-
-with open(r"src\frontend\config.json", "r") as f:
-    theme = json.load(f)
-
-
 from src.frontend_helper.gui_helpers import GuiHelpers
+from src.backend_helpers.path_helper import resource_path
 
+path = resource_path(r"src\frontend\config.json")
+with open(path, "r") as f:
+    theme = json.load(f)
 
 
 class FeedBack(QWidget):

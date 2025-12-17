@@ -22,7 +22,7 @@ Use this if you want to run F2G as a standalone app.
 
 ### Download (EXE Releases)
 **Latest EXE:**  
-@exe-download-link (to be added)
+https://github.com/Sha831/Frame2Game/releases/download/Exe-Frame2Game_v1.0.0/Frame2Game.7z
 
 ---
 
@@ -42,7 +42,7 @@ Use this if:
 
 ### Download (Model Releases)
 **Latest Model Bundle:**  
-@model-download-link (to be added)
+https://github.com/Sha831/Frame2Game/releases/download/Models-Frame2Game_v1.0.0/models.zip
 
 ---
 
@@ -51,13 +51,11 @@ Use this if:
 Simple versioning scheme:
 
 ### EXE Releases
-v1.0.0  
-v1.1.0  
-v1.2.0  
+
 
 ### Model Releases
 models-v1.0  
-models-v1.1  
+ 
 
 ---
 
@@ -65,8 +63,8 @@ models-v1.1
 
 | Release Type     | What it contains           | Who should download it     | Download Link |
 |------------------|----------------------------|-----------------------------|----------------|
-| **EXE Release**  | F2G application (.exe)     | End users                  | @exe-download-link |
-| **Model Release**| YOLO + SAM2 models         | New users / updating models | @model-download-link |
+| **EXE Release**  | F2G application (.exe)     | End users                  | https://github.com/Sha831/Frame2Game/releases/download/Exe-Frame2Game_v1.0.0/Frame2Game.7z |
+| **Model Release**| YOLO + SAM2 models         | New users / updating models | https://github.com/Sha831/Frame2Game/releases/download/Models-Frame2Game_v1.0.0/models.zip |
 
 ---
 

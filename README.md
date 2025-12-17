@@ -74,10 +74,10 @@ All processing is done **fully offline** using your system's CPU or GPU.
 Executables and model files will be available soon.
 
 - **Download EXE:**  
-  `@link to be added`
+  https://github.com/Sha831/Frame2Game/releases/download/Exe-Frame2Game_v1.0.0/Frame2Game.7z
 
 - **Download Models:**  
-  `@link to be added`
+  https://github.com/Sha831/Frame2Game/releases/download/Models-Frame2Game_v1.0.0/models.zip
 
 Once available, users simply:
 
@@ -95,7 +95,7 @@ If you want to run F2G from source or contribute to development:
   https://github.com/Sha831/Frame2Game
 
 - **Model Files:**  
-  `@models link to be added`
+  https://github.com/Sha831/Frame2Game/releases/download/Models-Frame2Game_v1.0.0/models.zip
 
 ### Run Locally
 ```bash

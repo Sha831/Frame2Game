@@ -10,9 +10,10 @@ from src.backend.image_editmanager import EditManager
 from src.backend.edit_options import EditOptions
 from src.frontend.object_style import ObjectStyle
 from src.backend_helpers.helper_thread import WorkerThread
+from src.backend_helpers.path_helper import resource_path
 
-
-with open(r"src\frontend\config.json", "r") as f:
+path = resource_path(r"src\frontend\config.json")
+with open(path, "r") as f:
     theme = json.load(f)
 
 

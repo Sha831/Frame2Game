@@ -5,8 +5,10 @@ import json
 
 
 from src.frontend.image_boundingbox import ImageViewer
+from src.backend_helpers.path_helper import resource_path
 
-with open(r"src\frontend\config.json", "r") as f:
+path = resource_path(r"src\frontend\config.json")
+with open(path, "r") as f:
     theme = json.load(f)
 
 

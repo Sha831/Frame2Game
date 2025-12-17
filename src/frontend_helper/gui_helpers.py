@@ -6,9 +6,12 @@ import json
 
 
 from src.frontend_helper import image_converters as img_conv
+from src.backend_helpers.path_helper import resource_path
 
-with open(r"src\frontend\config.json", "r") as f:
+path = resource_path(r"src\frontend\config.json")
+with open(path, "r") as f:
     theme = json.load(f)
+
 
 
 def style_font(widget: QWidget, size: int = 14, bold: bool = True):
