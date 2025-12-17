@@ -92,7 +92,7 @@ Once available, users simply:
 If you want to run F2G from source or contribute to development:
 
 - **Repository (Source Code):**  
-  `@repo link to be added`
+  https://github.com/Sha831/Frame2Game
 
 - **Model Files:**  
   `@models link to be added`

@@ -58,8 +58,7 @@ class FeedBack(QWidget):
 
         contact_label = QLabel("""
         <div style="text-align: center; font-size: 12pt; color: #ffffff;">
-            Gmail : pseudo.gmail.com<br>
-            GitHub : <a href='https://github.com/pseudogitlink'>@pseudogitlink</a>
+            GitHub : <a href='https://github.com/Sha831/Frame2Game'>Frame2Game Repository</a>
         </div>
         """)
         contact_label.setOpenExternalLinks(True)
