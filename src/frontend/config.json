@@ -1,0 +1,17 @@
+{
+    "MAINWINDOW_STYLE": "QWidget{background-color: #2b2b2b; color: #ffffff;} QPushButton {background-color: #4CAF50; color: white; border: none; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold;} QPushButton:hover {background-color: #45a049;} QLabel {color: #ffffff; font-size: 14px;} QPushButton:disabled {background-color: #666666; color: #999999;}",
+    
+    "GROUPBOX_STYLE": "QGroupBox { border: 1px solid gray; border-radius: 5px; margin-top: 0px; padding: 3px; background-color: #222; } QGroupBox::title { color: #4CAF50; subcontrol-origin: margin; subcontrol-position: top center; padding: 0 0px 0 0px; margin-top: -5px; }",
+    
+    "BUTTON_STYLE": "QPushButton { font-size: 13px; padding: 4px 4px; } QPushButton:checked {background-color: grey; color: black; } QPushButton:pressed {background-color: grey; color: black; }",
+    
+    "LABEL_STYLE": "QLabel { background-color: #222; font-size: 11px; padding: 2px 2px; border-radius: 5px; } QLabel:hover { border: 2px solid #4CAF50; }",
+
+    "SCROLLBAR_STYLE": "QScrollBar:vertical { background: #fcfcfc; width: 10px; border-radius: 5px; } QScrollBar::handle:vertical { background: #80e27e; min-height: 20px; border-radius: 5px; } QScrollBar:horizontal { background: #fcfcfc; width: 10px; border-radius: 5px; } QScrollBar::handle:horizontal { background: #80e27e; min-height: 20px; border-radius: 5px; }"
+
+}
+
+
+
+
+
