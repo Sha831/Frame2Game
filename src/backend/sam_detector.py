@@ -21,20 +21,21 @@ class SamExtractor():
     def set_device(self):
         #added try block to fallback to cpu if any error detecting gpu
         try:
-            if torch.cuda.is_available():
-                if self.gpu_id > 0:
-                    self.device = f'cuda:{self.gpu_id}'
-                else:
-                    self.device = 'cuda:0'  # Fallback to GPU 0
+            if torch.cuda.is_available() and torch.cuda.device_count()>0:
+                    if self.gpu_id < torch.cuda.device_count():
+                        self.device = torch.device(f"cuda:{self.gpu_id}")
+                    else:
+                        print(f"GPU {self.gpu_id} not found, falling back to CPU")
+                        self.device = torch.device("cpu")
             else:
-                self.device = 'cpu'
+                self.device = torch.device("cpu")
                 
         except Exception as e:
             print(f"Gpu detection failed, moving model to Cpu: {e}")
-            self.device = 'cpu'
+            self.device = torch.device("cpu")
 
         print(f"Using device: {self.device}")
-        
+
 
     def load_device(self):
         try:
@@ -46,13 +47,17 @@ class SamExtractor():
             print(f" Error loading models: {e}")
             raise
 
+
     def close(self):
         self._del_device()
 
+    
     def _del_device(self):
-        del self.model
+        if self.model is not None:
+            del self.model
         gc.collect()
-        torch.cuda.empty_cache()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
     
     def segmented_objects(self,image_path, bbox: dict,**kwargs):
