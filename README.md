@@ -1,6 +1,6 @@
 # Frame2Game (F2G)
 
-Frame2Game (F2G) is a lightweight tool — currently in active development — that converts any image or gameplay frame into clean, usable **2D game assets**.  
+Frame2Game (F2G) is a lightweight tool — currently in active development — that converts any image into clean, usable **2D game assets**.  
 It was built specifically to help **solo developers** and **indie game creators** rapidly prototype games without needing a full art pipeline or dedicated artists.
 
 F2G makes it easy to extract characters, objects, backgrounds, and styled sprites directly from images — fast, offline, and simple to use.
@@ -13,6 +13,10 @@ GTX series with CUDA support (GTX 10xx and newer)
 NVIDIA GPUs with CUDA Compute Capability ≥ 6.1
 
 Your GPU must support CUDA and have a compatible NVIDIA driver installed.
+
+### 🎥 Demo
+Watch Frame2Game in action:
+**https://youtu.be/kaCu0dfMvYQ?si=RsJXCd5HEnlXfOys**
 
 ---
 
